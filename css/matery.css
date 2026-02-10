@@ -550,9 +550,12 @@ header .go-back i {
     height: 40vh !important;
 }
 
+/* .bg-cover:after { */
+/*     -webkit-animation: rainbow 60s infinite; */
+/*     animation: rainbow 60s infinite; */
+/* } */
 .bg-cover:after {
-    -webkit-animation: rainbow 60s infinite;
-    animation: rainbow 60s infinite;
+    background-color: rgba(0, 0, 0, 0.4); /* 0.4 代表 40% 的黑色遮罩，数值越大越暗 */
 }
 
 .bg-cover:before,
