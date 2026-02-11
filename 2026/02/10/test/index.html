@@ -438,7 +438,7 @@
 <li>关上冰箱</li>
 </ol>
 <p>这是行内公式：$m\times n$，这是块级公式：</p>
-<p>$C_{m\times k}&#x3D;A_{m\times n}\cdot B_{n\times k}$</p>
+<p>$<br>C_{m\times k}&#x3D;A_{m\times n}\cdot B_{n\times k}<br>$</p>
 <p>这是一张图片：</p>
 <p><img src="https://cdn.imalan.cn/img/post/2934349b033b5bb5a19efc7233d3d539b700bcf5.jpg" alt="1fa0f7b958d4234db58eac4f75318d7b.jpeg"></p>
 <p>这是表格：</p>
@@ -791,6 +791,17 @@
 
 </main>
 
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
+            processEscapes: true
+        }
+    });
+</script>
 
 
 

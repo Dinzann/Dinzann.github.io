@@ -1,1 +1,14 @@
 /* Here is your custom css styles. */
+/* 确保在暗色模式下 Logo 图片强制显示 */
+body.DarkMode .brand-logo img, 
+body.dark .brand-logo img {
+    display: inline-block !important; /* 防止被设置为 none */
+    filter: none !important;          /* 防止被反色导致看不清 */
+    opacity: 1 !important;            /* 确保透明度正常 */
+}
+
+/* 如果你的 Logo 是在移动端侧边栏消失 */
+body.DarkMode .side-nav .logo-name img,
+body.dark .side-nav .logo-name img {
+    display: inline-block !important;
+}
