@@ -4,8 +4,16 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Dinzan&#39;s Blog">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="Aerospace:macos上强大的平铺窗口管理器, Dinzan&#39;s Blog">
+    <meta name="description" content="目录
+使用缘由
+为什么选择Aerospace
+如何安装Aerospace
+如何配置Aerospace
+使用感想
+
+
+使用缘由在macos上，我们会遇到很多时候需要在同一个桌面内放上几个窗口的时候，然而这时，使用macbook或小屏显示器的用">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +25,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | Dinzan&#39;s Blog</title>
+    <title>Aerospace:macos上强大的平铺窗口管理器 | Dinzan&#39;s Blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -334,12 +342,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://miro.medium.com/v2/resize:fit:1400/format:webp/1*DJT3mGiayeXPPo1fFGc4dg.png')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">Aerospace:macos上强大的平铺窗口管理器</h1>
                 </div>
             </div>
         </div>
@@ -375,7 +383,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2026-02-11
+                    2026-02-14
                 </div>
                 
 
@@ -399,19 +407,81 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
+<li><a href="#why">使用缘由</a></li>
+<li><a href="#chose">为什么选择Aerospace</a></li>
+<li><a href="#install">如何安装Aerospace</a></li>
+<li><a href="#setup">如何配置Aerospace</a></li>
+<li><a href="#feeling">使用感想</a></li>
+</ul>
+<p><a id="why"></a></p>
+<h1 id="使用缘由"><a href="#使用缘由" class="headerlink" title="使用缘由"></a>使用缘由</h1><p>在macos上，我们会遇到很多时候需要在同一个桌面内放上几个窗口的时候，然而这时，使用macbook或小屏显示器的用户经常会感到空间利用不足。</p>
+<p>虽然macos自带的屏幕平铺可以满足我们对屏幕利用率的需求，但是每次都一个一个点，也太过麻烦了。</p>
+<p>那么macos上有没有像linux一样有<em><strong>hyprland</strong></em>，<em><strong>niri</strong></em>，<em><strong>i3</strong></em>，<em><strong>sway</strong></em>之类的平铺窗口管理器呢？</p>
+<p>带着这个想法，我找到了<em><strong>yabai</strong></em>和<em><strong>aerospace</strong></em>。<br><a id="chose"></a></p>
+<h1 id="为什么选择Aerospace"><a href="#为什么选择Aerospace" class="headerlink" title="为什么选择Aerospace"></a>为什么选择Aerospace</h1><p>虽然<em><strong>yabai</strong></em>比<em><strong>aerospace</strong></em>更加成熟，发展时间也更长，但是现在来看，依然有许多弊端。快捷键需要搭配其他应用，窗口切换需要关闭sip…这让我感到苦恼。</p>
+<p>反看<em><strong>aerospace</strong></em>，使用了一种十分独特的窗口逻辑，创造的工作区其实是在同一个桌面上创出的虚拟工作区。另外，aerospace还有独特的窗口逻辑，值得我们去研究研究。<br><a id="install"></a></p>
+<h1 id="如何安装Aerospace"><a href="#如何安装Aerospace" class="headerlink" title="如何安装Aerospace"></a>如何安装Aerospace</h1><p><strong>我推荐使用homebrew安装，至于homebrew就不过多介绍了</strong></p>
+<ul>
+<li>在安装了homebrew的情况下，打开终端，键入以下命令</li>
+</ul>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">brew <span class="token function">install</span> <span class="token parameter variable">--cask</span> nikitabobko/tap/aerospace<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<ul>
+<li>安装完以后可以输入检查安装版本以及是否安装</li>
+</ul>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">aerospace <span class="token parameter variable">--version</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><strong>然后我们需要创建配置文件来管理aerospace</strong><br><a id="setup"></a></p>
+<h1 id="如何配置Aerospace"><a href="#如何配置Aerospace" class="headerlink" title="如何配置Aerospace"></a>如何配置Aerospace</h1><p>aerospace官方给出了两个配置文件加载地址，二者只能选择其一<br>分别在<code>/.aerospace.toml</code>和<code>/.config/aerospace/aerospace.toml</code></p>
+<p>本文推荐第二种地址，方便管理<br>输入以下内容创建文件夹</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">mkdir</span> .config/aerospace<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>然后将默认配置复制过来</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cp</span> /Applications/AeroSpace.app/Contents/Resources/default-config.toml ~/.config/aerospace/aerospace.toml<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p><strong>现在，你的aerospace就基本可以正常使用了，使用<code>command + space</code>搜索aerospace并打开，现在你可以发现顶部bar程序栏出现了一个数字 <code>1</code>，这便是aerospace代表的工作区，那么就可以看下面的文字继续精细配置了。</strong></p>
+<blockquote>
+<p>tips:如果你打开以后顶部bar没有出现aerospace的工作区，不要紧张，重启你的电脑也许可以解决问题</p>
+</blockquote>
+<p>在<code>.config/aerospace</code>目录下，我们可以看到一个<code>aerospace.toml</code>文件<br>使用你喜欢的文本编辑器打开它</p>
+<p>找到<code>start-at-login = </code>,在<code>=</code>后加上<code>true</code>，打开开机自启</p>
+<p><strong>此时，你多开几个应用，可以发现应用占满整个桌面并且自动平铺好了</strong></p>
+<p>但是我觉得窗口完全占满屏幕感觉不是很美观，所以可以找到<code>[gaps]</code>部分，可以看到一下内容</p>
+<pre class="line-numbers language-none"><code class="language-none">[gaps]
+    inner.horizontal &#x3D; 0
+    inner.vertical &#x3D;   0
+    outer.left &#x3D;       0
+    outer.bottom &#x3D;     0
+    outer.top &#x3D;        0
+    outer.right &#x3D;      0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>将这些<code>0</code>改成<code>5</code>，你也可以自己定义大小</p>
+<p>然后找到<code>[mode.service.binding]</code>部分，看到一下内容</p>
+<pre class="line-numbers language-none"><code class="language-none">[mode.service.binding]
+    esc &#x3D; [&#39;reload-config&#39;, &#39;mode main&#39;]
+    r &#x3D; [&#39;flatten-workspace-tree&#39;, &#39;mode main&#39;] # reset layout
+    f &#x3D; [&#39;layout floating tiling&#39;, &#39;mode main&#39;] # Toggle between floating and tiling layout
+    backspace &#x3D; [&#39;close-all-windows-but-current&#39;, &#39;mode main&#39;]
+
+    # sticky is not yet supported https:&#x2F;&#x2F;github.com&#x2F;nikitabobko&#x2F;AeroSpace&#x2F;issues&#x2F;2
+    #s &#x3D; [&#39;layout sticky tiling&#39;, &#39;mode main&#39;]
+
+    alt-shift-h &#x3D; [&#39;join-with left&#39;, &#39;mode main&#39;]
+    alt-shift-j &#x3D; [&#39;join-with down&#39;, &#39;mode main&#39;]
+    alt-shift-k &#x3D; [&#39;join-with up&#39;, &#39;mode main&#39;]
+    alt-shift-l &#x3D; [&#39;join-with right&#39;, &#39;mode main&#39;]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>这个service是上文<code>alt-shift-semicolon = &#39;mode service&#39;</code>定义的变量，你也可以自由更改。</p>
+<p><em><strong>按下<code>alt/option + shift + ；</code>进入服务模式，此时，菜单栏的图标左边会出现一个<code>[s]</code>的图标</strong></em></p>
+<p>我们看到<code>[mode.service.binding]</code>部分里的内容</p>
+<ul>
+<li>在service模式下，按下<code>esc</code>键可以重新加载配置，按下后，可以发现我们刚刚改的窗口边距生效了</li>
+<li>在正常模式下，我们按<code>alt/option + 工作区数字或字母</code>就可进入到对应的工作区</li>
+</ul>
+<blockquote>
+<p>还有其他功能，可以参照<a target="_blank" rel="noopener" href="https://nikitabobko.github.io/AeroSpace/guide#configuring-aerospace">官方文档</a><br><a id="feeling"></a></p>
+</blockquote>
+<h1 id="使用感想"><a href="#使用感想" class="headerlink" title="使用感想"></a>使用感想</h1><p>在使用了近一个月后，我明显感觉到我的学习效率<u>提升</u>了。<br>虽然仍然有许些地方需要<u>完善</u>,但其所到来的正面反馈绝对是大于负面反馈的。</p>
+<p><em><strong>最后，享受你的平铺窗口体验吧！</strong></em></p>
 
                 
             </div>
@@ -438,7 +508,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Dinzann.github.io/2026/02/11/hello-world/">https://Dinzann.github.io/2026/02/11/hello-world/</a>
+                    <a href="https://Dinzann.github.io/2026/02/14/aerospace/">https://Dinzann.github.io/2026/02/14/aerospace/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -552,9 +622,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2026/02/14/aerospace/">
                     <div class="card-image">
@@ -571,9 +642,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2026-02-14
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2026-02-14
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -582,6 +653,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -592,12 +664,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2026/02/10/test/">
+                <a href="/2026/02/11/hello-world/">
                     <div class="card-image">
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="Markdown Test">
                         
-                        <span class="card-title">Markdown Test</span>
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -608,7 +681,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2026-02-10
+                                <i class="far fa-clock fa-fw icon-date"></i>2026-02-11
                             </span>
                         <span class="publish-author">
                             
