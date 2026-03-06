@@ -12,3 +12,25 @@ body.DarkMode .side-nav .logo-name img,
 body.dark .side-nav .logo-name img {
     display: inline-block !important;
 }
+
+/* 1. 强制初始状态为透明 */
+.nav-transparent .bg-color {
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important; /* 移除阴影 */
+}
+
+/* 2. 针对固定顶栏的类名进行修改 */
+header .bg-color {
+    background-color: rgba(0, 0, 0, 0) !important; /* 完全透明 */
+    box-shadow: none !important;
+}
+
+/* 3. 如果你想在页面向下滚动后依然保持透明，或者变回不透明，可以控制这个类 */
+header.header-fixed .bg-color {
+    /* 如果想滚动后变回不透明，可以设置一个颜色，例如白色 */
+    /* background-color: #fff !important; */
+    
+    /* 如果想滚动后依然透明： */
+    background-color: rgba(0, 0, 0, 0) !important;
+}

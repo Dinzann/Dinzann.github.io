@@ -728,3 +728,19 @@ $(function () {
 </body>
 
 </html>
+
+<style>
+    /* 强行覆盖：无论怎么滑，背景都保持透明 */
+    header .bg-color, 
+    header.header-fixed .bg-color {
+        background-image: none !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+    }
+
+    /* 滑动后，为了看清菜单，把文字和图标改成你的 Logo 红 */
+    /* 假设你的 Logo 红是 #E53935，如果不是，请自行替换 */
+    header.header-fixed .nav-menu li a,
+    header.header-fixed .brand-logo,
+    header.header-fixed .nav-menu i,
+</style>
