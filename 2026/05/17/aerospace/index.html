@@ -12,8 +12,7 @@
 如何配置Aerospace
 使用感想
 
-
-使用缘由在macos上，我们会遇到很多时候需要在同一个桌面内放上几个窗口的时候，然而这时，使用macbook或小屏显示器的用">
+使用缘由在macos上，我们会遇到很多时候需要在同一个桌面内放上几个窗口的时候，然而这时，使用macbook或小屏显示器的用户">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -381,14 +380,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2026-03-22
+                    2026-05-17
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2026-03-22
+                    2026-05-17
                 </div>
                 
 
@@ -430,12 +429,11 @@
 <li><a href="#chose">为什么选择Aerospace</a></li>
 <li><a href="#install">如何安装Aerospace</a></li>
 <li><a href="#setup">如何配置Aerospace</a></li>
-<li><a href="#feeling">使用感想</a></li>
+<li><a href="#feeling">使用感想</a><br><a id="why"></a></li>
 </ul>
-<p><a id="why"></a></p>
 <h1 id="使用缘由"><a href="#使用缘由" class="headerlink" title="使用缘由"></a>使用缘由</h1><p>在macos上，我们会遇到很多时候需要在同一个桌面内放上几个窗口的时候，然而这时，使用macbook或小屏显示器的用户经常会感到空间利用不足。</p>
 <p>虽然macos自带的屏幕平铺可以满足我们对屏幕利用率的需求，但是每次都一个一个点，也太过麻烦了。</p>
-<p>那么macos上有没有像linux一样有<em><strong>hyprland</strong></em>，<em><strong>niri</strong></em>，<em><strong>i3</strong></em>，<em><strong>sway</strong></em>之类的平铺窗口管理器呢？</p>
+<p>那么macos上有没有像linux一样有<em><strong>hyprland</strong></em>，<strong><em>niri</em></strong>，<strong><em>i3</em></strong>，<em><strong>sway</strong></em>之类的平铺窗口管理器呢？</p>
 <p>带着这个想法，我找到了<em><strong>yabai</strong></em>和<em><strong>aerospace</strong></em>。<br><a id="chose"></a></p>
 <h1 id="为什么选择Aerospace"><a href="#为什么选择Aerospace" class="headerlink" title="为什么选择Aerospace"></a>为什么选择Aerospace</h1><p>虽然<em><strong>yabai</strong></em>比<em><strong>aerospace</strong></em>更加成熟，发展时间也更长，但是现在来看，依然有许多弊端。快捷键需要搭配其他应用，窗口切换需要关闭sip…这让我感到苦恼。</p>
 <p>反看<em><strong>aerospace</strong></em>，使用了一种十分独特的窗口逻辑，创造的工作区其实是在同一个桌面上创出的虚拟工作区。另外，aerospace还有独特的窗口逻辑，值得我们去研究研究。<br><a id="install"></a></p>
@@ -473,6 +471,7 @@
     outer.bottom &#x3D;     0
     outer.top &#x3D;        0
     outer.right &#x3D;      0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 <p>将这些<code>0</code>改成<code>5</code>，你也可以自己定义大小</p>
 <p>然后找到<code>[mode.service.binding]</code>部分，看到一下内容</p>
 <pre class="line-numbers language-none"><code class="language-none">[mode.service.binding]
@@ -488,8 +487,9 @@
     alt-shift-j &#x3D; [&#39;join-with down&#39;, &#39;mode main&#39;]
     alt-shift-k &#x3D; [&#39;join-with up&#39;, &#39;mode main&#39;]
     alt-shift-l &#x3D; [&#39;join-with right&#39;, &#39;mode main&#39;]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 <p>这个service是上文<code>alt-shift-semicolon = &#39;mode service&#39;</code>定义的变量，你也可以自由更改。</p>
-<p><em><strong>按下<code>alt/option + shift + ；</code>进入服务模式，此时，菜单栏的图标左边会出现一个<code>[s]</code>的图标</strong></em></p>
+<p><strong><em>按下<code>alt/option + shift + ；</code>进入服务模式，此时，菜单栏的图标左边会出现一个<code>[s]</code>的图标</em></strong></p>
 <p>我们看到<code>[mode.service.binding]</code>部分里的内容</p>
 <ul>
 <li>在service模式下，按下<code>esc</code>键可以重新加载配置，按下后，可以发现我们刚刚改的窗口边距生效了</li>
@@ -499,7 +499,7 @@
 <p>还有其他功能，可以参照<a target="_blank" rel="noopener" href="https://nikitabobko.github.io/AeroSpace/guide#configuring-aerospace">官方文档</a><br><a id="feeling"></a></p>
 </blockquote>
 <h1 id="使用感想"><a href="#使用感想" class="headerlink" title="使用感想"></a>使用感想</h1><p>在使用了近一个月后，我明显感觉到我的学习效率<u>提升</u>了。<br>虽然仍然有许些地方需要<u>完善</u>,但其所到来的正面反馈绝对是大于负面反馈的。</p>
-<p><em><strong>最后，享受你的平铺窗口体验吧！</strong></em></p>
+<p><strong><em>最后，享受你的平铺窗口体验吧！</em></strong></p>
 
                 
             </div>
@@ -526,7 +526,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://Dinzann.github.io/2026/03/22/aerospace/">https://Dinzann.github.io/2026/03/22/aerospace/</a>
+                    <a href="https://Dinzann.github.io/2026/05/17/aerospace/">https://Dinzann.github.io/2026/05/17/aerospace/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -612,7 +612,7 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2026/03/22/aerospace/">
+                <a href="/2026/05/17/aerospace/">
                     <div class="card-image">
                         
                         <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*DJT3mGiayeXPPo1fFGc4dg.png" class="responsive-img" alt="Aerospace:macOS上强大的平铺窗口管理器">
@@ -628,7 +628,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2026-03-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2026-05-17
                             </span>
                         <span class="publish-author">
                             
